@@ -1,8 +1,70 @@
+/**************************************
+SPECIAL FONT
+***************************************/
+
+/* @font-face kit by Fonts2u (http://www.fonts2u.com) */ 
+
+@font-face {
+    font-family: Droidiga;
+    src: url(Droidiga.woff);
+}
+
+/**************************************
+GENERAL
+***************************************/
 
 
+#weatherarea {
+    max-width: 300px; /*saying that the width is to only be this big and no bigger!*/
+    margin: 2em auto; /*Spacing around the elements, the first value sets the top and the bottom element to 0 (unit does not matter at all). The value 'auto' will fill out any space on the left or right of the margin. Whatever is left over will be filled because auto was used.*/
+    padding: 1% 5% 2% 2%; /*Again the first value represents the top and the bottom of the webpage so there is 0 padding on the top and bottom. The second value represents the left and right and there is only 5% of padding of the element to itself */
+    border: 3px solid black;
+    border-radius: 5px;
+    position: relative;
+}
 
+#weatherimage {
+    width: 100%;
+}
 
+#weatherimage {
+    padding: 5%;
+    max-width: 110px;
+    width: auto;
+    height: auto;
+    position: relative;
+    list-style: none;
 
+}
+
+h1, h2, h3, h4 {
+    margin: 0 0 0 0;
+    font-family: "Droidiga";
+}
+
+h1 {
+    font-size: 4.5em;
+}
+
+h2 {
+    font-size: 2.8em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%; 
+}
 
 
 /**************************************
@@ -18,7 +80,7 @@ footer {
 }
 
 .social-icon { /*Downsizing large icons will give high resolution mobile devices a bigger pixel density and they will look sharper.*/
-    width: 64px;
-    height: 64px;
+    width: 32px;
+    height: 32px;
     margin: 0 5px;
 }
