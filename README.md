@@ -8,7 +8,7 @@ Project SkyFront is going to be a weather based applicaiton that sits in a box a
 It is going to be a little application that I am aiming to build up slowly over a period of me being in my new job
 and using what I am learning.
 
-FRONT END
+TO LEARN
 =========
 * Learn JavaScript
   * AngularJS
