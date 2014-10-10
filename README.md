@@ -1,5 +1,4 @@
 SkyFront
-
 ========
 
 SkyFront is a little project that I have had in my head for about a year.
@@ -12,8 +11,8 @@ and using what I am learning.
 FRONT END
 =========
 * Learn JavaScript
-  ** AngularJS
-  ** jQuery
+** AngularJS
+** jQuery
 * Learn more HTML5
 * Learn more CSS3
 
