@@ -11,8 +11,8 @@ and using what I am learning.
 FRONT END
 =========
 * Learn JavaScript
-** AngularJS
-** jQuery
+  * AngularJS
+  * jQuery
 * Learn more HTML5
 * Learn more CSS3
 
