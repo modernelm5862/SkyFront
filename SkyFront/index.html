@@ -1,14 +1,17 @@
+
 <!DOCTYPE html 
       PUBLIC "-//W3C//DTD HTML 4.01//EN"
       "http://www.w3.org/TR/html4/strict.dtd">
+<script src="angular.js"></script>
+<script src="application.js"></script>
+<link rel="stylesheet" type="text/css" href="resources/css/style.css">
 <html lang="en-UK">
 <link rel="favicon" href="resources/favicon.ico" type="image/icon">
 <link rel="icon" href="resources/favicon.ico" type="image/icon">
 <meta charset="utf-8">
 
-<link rel="stylesheet" type="text/css" href="resources/css/style.css">
 
-<html>
+<html ng-app="weatherapp">
 
 <head>
     <title>Project SkyFront</title>
@@ -17,17 +20,32 @@
 <body>
 
 <div id="wrapper">
-<section id="weatherarea">
-<h3>Friday</h3>
-<h4>10/10/2014</h4>
-<hr noshade width="108%" size="4" align="center" color="black">
-<h2>TEMP.</h2>
-<h1>21&degC</h1>
+    <section id="weatherarea">
+        <h4>{{day}}</h4>
+        <h3>{{date}}/{{month}}/{{year}}</h3>
+        <hr noshade color="black">
+        <h2>TEMP.</h2>
+        <h1>{{temperature}}&degC</h1>
+    </section>
+</div>
+
+<div id="example">
+    <h5>DEMO INFORMATION</h5>
+    Todays Day: <input type="text" ng-model="day">
+    Todays Date: <input type="text" ng-model="date">
+    Todays Month: <input type="text" ng-model="month">
+    Todays Year: <input type="text" ng-model="year">
+    Temperature: <input type="number" ng-model="temperature">
+</div>
+
+<!-- <section id="weatherimage">
+<img src="resources/img/Water-Humidity.png" alt="Weather Image Representation">
 </section>
+ -->
 
 </body>
 
-<footer> <!-- Copywrite information or social media links can go here. It is a good place to put information that is wanted to be put on every page of the website. This information is not important enough to put at the top of the page.-->
+<footer>
     <a href="http://facebook.com/modernelm5862"><img src="resources/img/facebook.png" alt="Grey Facebook Logo" class="social-icon"></a>
     <a href="http://twitter.com/modernelm"><img src="resources/img/twitter.png" alt="Grey Twitter Logo" class="social-icon"></a>
     <a href="https://github.com/modernelm5862"><img src="resources/img/github.png" alt="Black and White GitHub Logo" class="social-icon"></a>
