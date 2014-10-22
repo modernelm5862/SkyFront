@@ -7,32 +7,43 @@
 
 })();
 
-var day = new Date();
-var newDay = day.getUTCDay();
+function getAllDates($scope) {
 
-var dayArray = new Array(7);
-dayArray[0] = "Sunday";
-dayArray[1] = "Monday";
-dayArray[2] = "Tuesday";
-dayArray[3] = "Wednesday";
-dayArray[4] = "Thursday";
-dayArray[5] = "Friday";
-dayArray[6] = "Saturday";
-var todayDay = dayArray[day.getDay()];
-console.log("Today's Day is", todayDay);
+	//Getting the day
+	var day = new Date();
+	var newDay = day.getUTCDay();
+	var dayArray = new Array(7);
+	dayArray[0] = "Sunday";
+	dayArray[1] = "Monday";
+	dayArray[2] = "Tuesday";
+	dayArray[3] = "Wednesday";
+	dayArray[4] = "Thursday";
+	dayArray[5] = "Friday";
+	dayArray[6] = "Saturday";
+	var todayDay = dayArray[day.getDay()];
+	$scope.day = todayDay;
 
-var date = new Date();
-var newDate = date.getDate();
-console.info("Today's Date is", newDate);
+	//getting the date
+	var dateOutput = document.getElementById('todaysDate');
+	var date = new Date();
+	var newDate = date.getDate();
+	$scope.date = newDate;6
+	//getting the month
+	var monthOutput = document.getElementById('todaysMonth');
+	var month = new Date();
+	var newMonth = month.getMonth();
+	$scope.month = newMonth;
 
-var month = new Date();
-var newMonth = month.getMonth();
-console.info("Today's Month is", newMonth);
+	//getting the year
+	var yearOutput = document.getElementById('todaysYear');
+	var year = new Date();
+	var newYear = year.getFullYear();
+	$scope.year = newYear;
+};
 
-var year = new Date();
-var newYear = year.getFullYear();
-console.info("Today's Year is", newYear);
-
-
-
-console.log("HEY");
+function getTemperature($scope){
+	//need something that will randomly generate a number between -5 and 25 degrees
+	var randomTemperature = Math.floor((Math.random() * 31) ); //range from 0 to 30
+	var finalTemperature = randomTemperature - 5; //minus 5 so that 0 turns into -5 and 30 turns into 25, the min and max range.
+	$scope.temperature = finalTemperature;
+};
