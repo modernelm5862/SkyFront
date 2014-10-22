@@ -1,18 +1,16 @@
 /**************************************
 SPECIAL FONT
 ***************************************/
-
-/* @font-face kit by Fonts2u (http://www.fonts2u.com) */ 
-
-/*@font-face {
+@font-face {
     font-family: Droidiga;
-    src: url(resources/Droidiga.woff);
-}*/
-
+    src: url(../Droidiga.ttf);
+}
 /**************************************
 GENERAL
 ***************************************/
-
+#simulated {
+    padding-top: 50px;
+}
 
 #weatherarea {
     max-width: 300px; /*saying that the width is to only be this big and no bigger!*/
